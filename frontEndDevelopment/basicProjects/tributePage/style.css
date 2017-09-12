@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+body {
+	background-color: black;
+	color: white;
+	padding-top: 60px;
+}
+container {
+	background: gray;
+}
+
+@media (max-width:749px) {
+	#logo {
+		width: 50%;
+	}
+}
+
+#links li {
+	display: inline;
+	list-style-type: none;
+}
+
+hr {
+	background-color: gray;
+}
+
+#video {
+	margin-bottom: 30px;
+}
+
+#band-image {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#band-image img {
+	width: 100%; 
+	height:auto;
+}
+
+#title-text {
+	font-family: Pacifico;
+	margin-bottom:30px;
+}
