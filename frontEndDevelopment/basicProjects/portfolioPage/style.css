@@ -1,0 +1,65 @@
+#nav, footer {
+    background-color: #76323f;
+  }
+  #about, #contact {
+    background-color: #d7cec7;
+  }
+  #portfolio {
+    background-color: #565656;
+  }
+  
+  #me {
+    height: 200px;
+    border-radius: 20px;
+  }
+  
+  .card-text {
+    color: #212529;
+    text-decoration: none;
+  }
+  
+  .card-text:link {
+    text-decoration: none;
+  }
+  
+  .card-text:visited {
+    text-decoration: none;
+  }
+  
+  .card-text:hover {
+    text-decoration: none;
+  }
+  
+  #portfolio a:hover {
+    text-decoration: none;
+  }
+  
+  footer {
+    color:white;
+  }
+  
+  #portfolio h2 {
+    color:white;
+  }
+  
+  h2 {
+    font-family: 'Lato';
+    padding-bottom: 15px;
+  }
+  
+  nav {
+    font-family: 'Lato';
+  }
+  
+  #aboutText {
+    font-size: 14px
+  }
+  
+  .card a:hover {
+  
+    opacity:0.8;
+  }
+  
+  .card {
+    margin-bottom:10px;
+  }
