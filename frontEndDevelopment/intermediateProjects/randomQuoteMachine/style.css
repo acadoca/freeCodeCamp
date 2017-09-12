@@ -1,0 +1,45 @@
+body {
+    background-color: #87CEFA;
+  }
+  
+  #quotes {
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  #title {
+    color: white;
+    font-family: 'Damion', cursive; 
+  }
+  
+  #quote-content {
+    font-size: 24px;
+  }
+  
+  #quote-source em{
+    border-top: 3px solid lightgray;
+    padding-top: 5px;
+    padding-left:30px;
+    font-size: 20px;
+  }
+  
+  .btn-info, btn-info:link, btn-info:visited {
+    background-color: #87CEFA;
+    border-color:#87CEFA;
+  }
+  
+  .btn-info:hover {
+    background-color: #56baf8;
+    border-color: #56baf8;
+  }
+  
+  btn-info:active {
+    background-color: #87CEFA;
+    border-color:#87CEFA;
+    size:100%;
+  }
+  
+  .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+      box-shadow: 0 0 0 0;
+  }
+  

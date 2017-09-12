@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Quote Machine</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1 id="title" class="display-3 text-center mt-5">Random Quote Machine</h1>
+    <div id="quotes" class="container align-middle p-5 mt-5">
+        <div id="quotes-text">
+            <div id="quote-content" class="mb-3">
+            </div>
+            <div id="quote-source" class="mb-3 text-right">
+            </div>
+        </div>
+        <button type="button" id="next" class="btn btn-info">Next quote</button>
+        <a id="tweet" class="twitter-share-button btn btn-info" href="" target="_blank">Tweet</a>
+    </div>
+
+    <script>
+               function twt() {
+    
+      var text = "https://twitter.com/intent/tweet?text=";
+      $.getJSON("https://talaikis.com/api/quotes/random/", function(data) {
+        $("#quote-source").html("<em>" + data["author"] + "</em>");
+        $("#quote-content").html(data["quote"]);
+        
+        text += encodeURIComponent(data["quote"] + " " + data["author"]);
+      $("#tweet").attr("href", text);
+      });
+    }
+    
+    $(document).ready(twt);
+    
+    $("#next").on("click", twt);
+    
+    
+    </script>
+</body>
+
+</html>
