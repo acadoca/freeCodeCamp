@@ -1,0 +1,36 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.off {
+    background-color: gray;
+    color: white;
+}
+
+.on {
+    background-color: palegreen;
+    color: black;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    
+}
+
+img {
+    margin-top: 12px;
+}
+
+.stream {
+    border-radius: 10px;
+    border: 5px solid #E4FDE1;
+}
+
+.stream:hover {
+    border: 5px solid orange;
+}
+
+body {
+    background-color: #E4FDE1;
+}
